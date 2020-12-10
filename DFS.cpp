@@ -48,12 +48,12 @@ bool dfs(int x, int y)
 	return 0;
 }
 int main() {
-			ios::sync_with_stdio(false); cin.tie(nullptr);
-			cin >> M >> N >> REQ;
-			bool ans = dfs(0, 0);
-			if (ans) cout << "YES its possible " << endl;
-			else cout << "NO it is not possible" << endl;
-			reverse(vp.begin(),vp.end());
-		    for (auto &[x, y] : vp) cout << x <<" "<< y << endl;
-			return 0;
+	ios::sync_with_stdio(false); cin.tie(nullptr);
+	cin >> M >> N >> REQ;
+	bool ans = dfs(0, 0);
+	if (ans) cout << " possible " << endl;
+	else cout << "not possible" << endl;
+	reverse(vp.begin(),vp.end());
+	for (auto &[x, y] : vp) cout << x <<" "<< y << endl;
+	return 0;
 }
