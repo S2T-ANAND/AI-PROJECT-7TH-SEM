@@ -63,6 +63,7 @@ signed main() {
             }
         }
         if (vp.size() == 0) return cout <<"NOT POSSIBLE" , 0;
+        cout <<"POSSIBLE" << endl;
         reverse(vp.begin(), vp.end());
-        for (auto &[x, y] : vp) cout << x<< " "<<y <<endl; 
+        for (auto &[x, y] : vp) cout << x << " "<< y << endl; 
 }
